@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Bubble Chart Example</title>
+		
+		<script src="bubbleChart.js"></script>
+		<script>
+		window.onload = function() {
+			var myChart = new Chart.Bubble('chart', {
+				width: 1300,
+				height: 600,
+				bubbleSize: 50
+			});
+
+			myChart.addBubble(10, 20, 30, 'orange', 'Bubble 1');
+			myChart.addBubble(0, 40, 20, 'black', 'Bubble 2');
+			myChart.addBubble(500, 500, 500, 'red', 'Bubble 3');
+			myChart.addBubble(300, 500, 500, 'blue', 'Bubble 4');
+
+			myChart.redraw();
+		};
+		</script>
+	</head>
+	<body>
+		<div id="chart"></div>
+	</body>
+</html>
