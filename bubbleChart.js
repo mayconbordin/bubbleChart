@@ -80,8 +80,8 @@ Chart.Bubble.prototype = {
 		
 		var div = document.createElement('div');
 		Util.setStyles(div, {
-			'text-align': 'center',
-			'background-color': '#8b2e19',
+			'textAlign': 'center',
+			'backgroundColor': '#8b2e19',
 			'width': this.options.width + "px",
 			'height': this.options.height + "px",
 			'color': '#fff'
@@ -104,8 +104,8 @@ Chart.Bubble.prototype = {
 			'width': this.options.width + "px",
 			'height': this.options.height + "px",
 			'top': 0-this.options.height-3 + "px",
-			'margin-bottom': 0-this.options.height-3 + "px",
-			'font-family': 'Helvetica, Arial, sans-serif',
+			'marginBottom': 0-this.options.height-3 + "px",
+			'fontFamily': 'Helvetica, Arial, sans-serif',
 			'z-index': 240
 		});
 
@@ -126,15 +126,15 @@ Chart.Bubble.prototype = {
 			'position': 'absolute',
 			'display': 'none',
 			'border': '2px solid #000',
-			'background-color': '#262626',
+			'backgroundColor': '#262626',
 			'padding': '0.5em',
-			'border-radius': '3px',
-			'white-space': 'nowrap',
-			'z-index': 250,
+			'borderRadius': '3px',
+			'whiteSpace': 'nowrap',
+			'zIndex': 250,
 			'color': '#fff',
-			'font-size': '11px',
-			'line-height': '1.3em',
-			'text-align': 'left'
+			'fontSize': '11px',
+			'lineHeight': '1.3em',
+			'textAlign': 'left'
 		});
 		
 		this.overlay.appendChild(this.tip);
@@ -175,11 +175,11 @@ Chart.Bubble.prototype = {
 			el.innerHTML = '';
 			Util.setStyles(el, {
 				'position': 'absolute',
-				'font-size': '10px',
-				'line-height': '20px',
+				'fontSize': '10px',
+				'lineHeight': '20px',
 				'height': '20px',
 				'width': xstep + 'px',
-				'text-align': 'center',
+				'textAlign': 'center',
 				'top': (this.options.height - this.paddingBottom + 10) + 'px',
 				'left': (this.paddingLeft + this.options.bubbleSize) - (xstep / 2) + i * xstep + 'px',
 				'color': this.options.lineColor
@@ -193,12 +193,12 @@ Chart.Bubble.prototype = {
 			el.innerHTML = '';
 			Util.setStyles(el, {
 				'position': 'absolute',
-				'font-size': '10px',
-				'line-height': '20px',
+				'fontSize': '10px',
+				'lineHeight': '20px',
 				'height': '20px',
-				'vertical-align': 'middle',
+				'verticalAlign': 'middle',
 				'width': (this.paddingLeft - 15) + 'px',
-				'text-align': 'right',
+				'textAlign': 'right',
 				'top': (this.options.bubbleSize + (i * ystep) + this.paddingTop - 10) + 'px',
 				'left': '0px',
 				'color': this.options.lineColor
@@ -209,12 +209,12 @@ Chart.Bubble.prototype = {
 		
 		var labelStyles = {
 			'position': 'absolute',
-			'font-size': '10px',
-			'line-height': '20px',
+			'fontSize': '10px',
+			'lineHeight': '20px',
 			'width': (this.xwork) + 'px',
-			'text-align': 'center',
+			'textAlign': 'center',
 			'bottom': '0px',
-			'letter-spacing': '0.1em',
+			'letterSpacing': '0.1em',
 			'left': (this.paddingLeft + this.options.bubbleSize ) + 'px',
 			'color': this.options.lineColor
 		}
@@ -246,7 +246,7 @@ Chart.Bubble.prototype = {
 				'height': 1.1 * (i+2) + 'em',
 				'left': '0px',
 				'top': '0px',
-				'line-height': '1.1em'
+				'lineHeight': '1.1em'
 			});
 
 			this.overlay.appendChild(this.ylabel);
